@@ -3,10 +3,10 @@
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
-   
+
 }
 
-body{
+body {
     height: auto;
     min-height: 100vh;
     background: url(/bg-image-lore.jpg);
@@ -14,9 +14,9 @@ body{
     background-position: center;
 }
 
-.sidebar .sidebar-menu{
+.sidebar .sidebar-menu {
     height: 100vh;
-    width: 280px; 
+    width: 280px;
     left: -280px;
     position: fixed;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
@@ -98,7 +98,7 @@ body{
     display: none;
 }
 
-.sidebar .op-btn i{
+.sidebar .op-btn i {
     color: #fff;
     font-size: 30px;
     font-weight: 700;
@@ -121,23 +121,23 @@ body{
     transition: all 0.3s linear;
 }
 
-.op-btn i:hover{
+.op-btn i:hover {
     font-size: 29px;
 }
 
-.cl-btn i:hover{
+.cl-btn i:hover {
     font-size: 24px;
 }
 
-#check:checked ~.sidebar-menu{
+#check:checked~.sidebar-menu {
     left: 0px;
 }
 
-#check:checked ~.op-btn i{
+#check:checked~.op-btn i {
     opacity: 0;
 }
 
-#check:checked ~.sidebar-menu .cl-btn i{
+#check:checked~.sidebar-menu .cl-btn i {
     opacity: 1;
 }
 
@@ -163,7 +163,7 @@ body{
     font-size: 45px;
 }
 
-.infocontainer{
+.infocontainer {
     margin: 25px 94px 94px 94px;
     display: flex;
     flex-wrap: wrap;
@@ -173,46 +173,68 @@ body{
     backdrop-filter: blur(8px);
 }
 
-.infocontainer .logo img{
+.infocontainer .logo img {
     width: auto;
     height: auto;
     flex: 1 0;
 }
 
-.infocontainer .info{
-    flex: 1 0 ;
+.infocontainer .info {
+    flex: 1 0;
     color: #000;
     align-content: center;
     margin: 22px 0px 0px 17px;
     align-items: center;
 }
 
-.gallery{
+.gallery {
     margin: 25px 94px 94px 94px;
     border: 5px solid white;
     border-radius: 10px;
     background: transparent;
-    backdrop-filter: blur(8px);
-    /* display: flex; */
-    /* justify-content: center; */
+    backdrop-filter: blur(5px);
     color: #fff;
 }
 
-.slid-container{
+.gallery h1 {
+    display: flex;
+    place-content: center;
+    color: #000;
+    font-weight: 200;
+    font-size: 40px;
+}
+
+.slide-container {
     max-width: 1120px;
     width: 100%;
     background-color: grey;
     padding: 40px 0;
 }
 
-.card{
-    width: 320px;
+.slide-content{
+    padding: 40px 10px;
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
 }
 
-.card img{
-position: relative;
-height: 100%;
-width: 100%;
-object-fit: cover;
-border-radius: 20px;
+.card img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.swiper-navBtn{
+    color: #6e93f7;
+}
+
+.swiper-navBtn:hover{
+    color: #4070F4;
+}
+
+.swiper-pagination-bullet{
+    background-color: #6e93f7;
+    opacity: 1;
 }
