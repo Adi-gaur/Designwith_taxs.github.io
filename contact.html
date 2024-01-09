@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Designwith_taxs-gallery</title>
+    <title>Designwith_taxs-Contact</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="CSS/gallery.css">
+    <link rel="stylesheet" href="CSS/contact.css">
 </head>
+
 <body>
     <div class="sidebar">
         <input type="checkbox" id="check">
@@ -49,19 +51,33 @@
 
         <span class="heading">Designwith_taxs</span>
     </div>
-    <div class="responsive-gallery">
-        <h1>Gallery</h1>
-        <div class="gallery">
-            <img src="Gallery-pics/img1.jpg" alt="img1">
-            <img src="Gallery-pics/img2.jpg" alt="img2">
-            <img src="Gallery-pics/img3.jpg" alt="img3">
-            <img src="Gallery-pics/img4.jpg" alt="img4">
-            <img src="Gallery-pics/img5.jpg" alt="img5">
-            <img src="Gallery-pics/img6.jpg" alt="img6">
-            <img src="Gallery-pics/img7.jpg" alt="img7">
-            <img src="Gallery-pics/img8.jpg" alt="img8">
+    <div class="work-area">
+        <div class="contactform">
+            <h1 class=" animate-div contact-heading">Contact Us</h1>
+            <form action="#" class="form">
+                <div class=" input-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Name:</label>
+                </div>
+                <div class=" input-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                </div>
+                <div class=" input-group">
+                    <input type="text" id="Topic" name="Topic" required>
+                    <label for="Topic">Topic:</label>
+                </div>
+                <div class=" input-group">
+                    <textarea id="data" name="data" rows="4" required></textarea>
+                    <label for="data">Message For Us:</label>
+                </div>
+                <input type="submit" value="Send Email" class="submit-btn">
+            </form>
         </div>
     </div>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="JS/contact.js"></script>
 </body>
+
 </html>
